@@ -18,7 +18,10 @@ body {
   }
 
 
-
+.conteiner {
+    max-width: 784px;
+    min-width: auto;
+}
 
 .header {
     width: 100%; /* Занимает всю доступную ширину */

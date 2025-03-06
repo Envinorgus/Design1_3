@@ -1,0 +1,472 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: TTLakes;
+}
+
+
+
+.service-menu {
+    display: flex;
+    list-style-type: none;
+}
+
+@font-face {
+    font-family: 'TTLakes'; 
+    src: url('font/TTLakes-Medium.ttf') format('ttf'),
+         url('font/TTLakes-Medium.woff') format('woff'),
+         url('font/TTLakes-Medium.woff2') format('woff2');
+  }
+
+
+  .p {
+    font-weight: 400;
+  }
+
+  .main {
+    margin: 0px;
+    padding: 0px;
+  }
+
+
+
+  .nav {
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    height: 88px;
+}
+
+.conteiner {
+    min-width: 320px;
+    max-width: 1120px ;
+}
+
+/* ------------------------------------------------------------СМАРТФОН 320x597*/
+@media (max-width: 320px) {
+
+    .body {
+     width: 320px;
+     height: 597px; 
+     font-size: 14px;
+     line-height: 18px;  
+    }
+
+
+
+
+/*-------------------------------------------------- скрываем элементы в моб. версии 320x597*/
+    .menu__item_mhide {
+        display: none;
+    }
+
+    .revie_hide {
+        display: none;
+    }
+
+    /* -----------------------------------------------МЕНЮ 320x597*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+    .header {
+        
+        width: 320px;
+        height: 88px;
+        border:0.5px solid #B8FFEC;
+        
+ 
+    }
+
+
+
+
+
+    .menu__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+/*
+    .menu__item:nth-child(2)::after {
+        content: url(divider.svg);
+        display: block;
+        margin-right: 40px; 
+    }
+
+    .menu__item:nth-child(2)::before {
+        content: "";
+    }
+
+    .menu__item:nth-child(1) {
+        margin-left: 36px;
+        margin-right: 16.73px;   
+    }
+    .menu__item:nth-child(2) {
+        margin-right: -16.73px;   
+    }
+    .menu__item:nth-child(3) {
+        margin-left: 16.73px;
+        margin-bottom: 14px;
+    }
+    .menu__item:nth-child(4) {
+        margin-left: 20px;  
+    }
+    .menu__item:last-child {
+        margin-left: 10px;  
+    }
+
+
+
+
+
+    .menu__link{
+        margin-top: -5.41px;
+        margin-bottom: 18.59px;
+    }
+
+    .menu_image {
+        margin-bottom: 28px;
+        margin-left: 0.73px;
+        margin-right: 4px;        
+    }
+
+*/
+
+    /* ------------------------------------------услуги и сервисы заголовок h1 320x597*/
+    .span {
+        padding: 0px;
+        margin-left: 0px;
+        margin-top: 24px;
+        display: flex;
+        width: 304px;
+        height: 40px;
+        align-items: center;
+        text-align: left;
+        justify-content: left;
+        }
+
+    .span::before {
+        content: url(highlight.svg);
+        display: block;
+        position: absolute;
+        left: -16px;
+        margin-right: 16px;
+    }
+
+
+
+    .highlts {
+        margin-top: 10px;
+    }
+
+    .main {
+        padding: 0px;
+        margin: 0px;
+    }
+
+
+      /* ------------------------------------------УСЛУГИ 320x597*/
+    .service-menu__item {
+        white-space: nowrap;
+    }
+
+    .nav-service_pos {
+        width: 504px;
+        height: 40px;
+    }
+
+    .service-menu {
+        width: 100%;
+        height: 100%;
+        padding-left: 16px;    
+    }
+
+
+    .button {
+        padding: 2px;
+        background-color: white;
+        color: grey;
+        border: none;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.2px;
+        
+    }
+
+    .button:hover {
+        border:0.5px solid #B8FFEC;
+        border-radius:5px; 
+        
+    }
+
+    /*-----------------------------------------Секция "о нас" 320x597*/
+
+    .about-as {
+        width: auto;
+        height: auto;
+        /*        width: 320px;
+        height: 322px;*/
+        margin-top: 16px;
+        display: grid;
+        
+        
+
+    }
+
+    .about-as__p2_hidden-mob {
+        display: none;
+    }
+
+    .photo {
+        width: 320px;
+        height: 176px;
+        
+    }
+    
+    .about-as__p1 {
+        margin-left: 16px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        width: 288px;
+        height: 90px;
+        
+    }
+/* ---------------------------------------- ссылка читать далее 320x597*/
+
+    .read-more {
+        width: 132px;
+        height: 24px;
+        display: inline-block;
+        margin: 16px;
+
+     }
+
+    .read-more__img {
+        vertical-align: middle;
+    }
+
+    .read-more__link {
+        vertical-align: middle;
+    }
+
+}
+
+/* ----------------------------------------------------РАЗМЕР 784х504*/
+@media (max-width: 784px) {
+
+    .body {
+        margin: 0px;
+        padding: 0px;
+        width:auto;
+        height:auto;
+       /* width: 784px;
+        height: 504px; */
+        font-size: 16px;
+        line-height: 18px;  
+       }
+
+       .revie_hide {
+            display: none;
+
+       }
+
+       /* -----------------------------------------------МЕНЮ 784х504*/
+       .header {
+           margin: 0;
+           padding: 0;
+           width: auto;
+           height: auto;
+           /*width: 768px;
+           height: 88px;*/
+           border:0.5px solid #B8FFEC
+           
+    
+       }
+   
+       .nav {
+           margin: 0;
+           padding: 0;
+           width: 768px;
+           height: 88px;
+       }
+   /*
+       .menu_pos{
+           margin-left: -24px;
+           margin-right: 16px;
+           margin-top: 24px;
+           margin-bottom: 24px;
+           list-style-type: none;
+           display: flex;
+           justify-content: flex-start;
+       }*/
+   /*--------------------------------------------------меню 784х504*/
+       .menu {
+           display: flex;
+           justify-content: center;
+           gap: 20px; 
+       }
+   
+       .menu__item {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        
+        
+       }
+
+       .menu__item:nth-child(4) {
+        margin-left: auto;
+       }
+
+       .menu__item:nth-child(3) {
+        margin-left: 227px;
+       }
+
+
+
+       .menu__item:nth-child(2) {
+           margin-left: 3px;
+       }
+
+       .menu__item:nth-child(2)::before {
+        content: url(divider.svg);
+        display: block;
+        margin-right: 40px; 
+    }
+
+       .menu__item:nth-child(1) {
+        margin-left: -16px;
+
+       }
+
+       .menu__item:nth-child(5)::after {
+        content: url(divider.svg);
+        
+        margin-left: 20px;
+       }
+
+       .menu__item:nth-child(6) {
+        margin-left: 4px;
+       }
+
+       .menu__item:nth-child(7) {
+        margin-right: 30px;
+       }
+
+       .main {
+        background-color: #F8F8F8;
+       }
+
+
+   /*
+       .menu__link-logo, .menu__link {
+           position: relative;
+           margin-top: -10.41px;
+           padding-bottom: 18.59px;
+   
+   
+       }*/
+   
+       /* ------------------------------------------услуги и сервисы заголовок h1 784х504*/
+       .span {
+           padding: 0px;
+           margin-left: 0px;
+           margin-top: 24px;
+           display: flex;
+           width: 304px;
+           height: 40px;
+           align-items: center;
+           text-align: left;
+           justify-content: left;
+           }
+   
+       .span::before {
+           content: url(highlight.svg);
+           margin-right: 16px;
+       }
+   
+   
+   
+       .highlts {
+           margin-top: 10px;
+       }
+   
+       .main {
+           padding: 0px;
+           margin: 0px;
+       }
+   
+   
+         /* ------------------------------------------УСЛУГИ 784х504*/
+       .service-menu__item {
+           border:1px solid #B8FFEC;
+           white-space: nowrap;
+       }
+   
+       .nav-service_pos {
+           width: 776px;
+           height: 40px;
+       }
+   
+       .service-menu {
+           width: 100%;
+           height: 100%;
+           padding-left: 16px;    
+       }
+   
+   
+       .button {
+           padding: 2px;
+           background-color: white;
+           color: grey;
+           border: none;
+           font-size: 16px;
+           line-height: 24px;
+           letter-spacing: -0.2px;
+           
+       }
+   
+       /*.button:hover {
+           border:0.5px solid #B8FFEC;
+           border-radius:5px; 
+       }*/
+   
+       /*-----------------------------------------Секция "о нас" 784х504*/
+   
+       .about-as {
+        width: 769px;
+        height: 416px;
+        display: flex;
+        align-items: flex-start;
+}
+
+   
+
+
+    
+   /* ---------------------------------------- ссылка читать далее 784х504*/
+   
+       .read-more {
+           width: 132px;
+           height: 24px;
+           display: inline-block;
+           margin: 16px;
+   
+        }
+   
+       .read-more__img {
+           vertical-align: middle;
+       }
+   
+       .read-more__link {
+           vertical-align: middle;
+       }
+
+    /*-----------------------------------------"блок о нас"784х504*/
+
+
+
+
+}

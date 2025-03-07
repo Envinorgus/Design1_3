@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    flex-grow: 0;
+    
 }
 
 body {
@@ -18,9 +18,9 @@ body {
   }
 
 
-.conteiner {
-    max-width: 784px;
-    min-width: auto;
+.button {
+    list-style-type: none;
+
 }
 
 .header {
@@ -29,13 +29,32 @@ body {
     display: flex;
     
     border-bottom: 1px solid #ddd; /* Разделительная линия */
-    background-color: #f8f8f8; /* Цвет фона */
+    
 }
 
 .menu {
     display: flex;
     list-style: none;
-    
+    margin-left: -5px;
+}
+
+.menu__item-left {
+    display: flex;
+    flex-direction: row;
+    gap:16.73px;
+}
+
+.menu__user-action {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.menu__item-right {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+
     
 }
 
@@ -44,231 +63,277 @@ body {
     height: 100%;
 }
 
+.img {
+    display: flex;
+}
 
-.span {
-    width: 100%;
-    height: auto;
+.title {
     display: flex;
     flex-direction: row;
-
+    gap: 20px;
 }
 
+.title_img {
+    border-radius: 0 5px 5px 0;
+}
 
 .service-menu {
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
     display: flex;
-    overflow-x: auto; 
+    gap: 1px;
     white-space: nowrap;
+    
 }
 
-.service-menu__button {
+.service-button {
     background-color: white;
-    font-size: medium;
-    font-weight: 400;
-    color: grey;
-    padding: 3px;
-    width: 100%; /* Кнопки занимают всю ширину */
-    border: 2px solid #B8FFEC;
+    border: 2px solid transparent; /* Прозрачный бордер */
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    border-radius: 8px; /* Закругляем углы */
+    transition: border-color 0.3s ease;
+
+}
+
+.service-button:hover {
+    border-color: #B8FFEC;
+}
+
+.about-as {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.reset__list {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0 0;
+    gap: 0;
+    list-style-type: none;
 }
 
 
 
 
+@media (max-width: 320px) {
+    .header {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /*align-items: center;*/
+        margin-left: -16px;
+    }
+
+     /*----------------------------------- Скрыть элементы*/
+
+    .user-action_hidden {
+        display: none;
+    }
+    
+    .right_item_hidden {
+        display: none;
+    }
+
+    .about-as__p2_hidden-mob {
+        display: none;
+    }
+
+    .revie_hide {
+        display: none;
+    }
+
+     /*----------------------------------- Верхнее меню СМАРТФОН*/
+    .burger {
+        margin-left: -8px;
+        margin-right: 16.73px;
+    }
+
+    .logo {
+        /*margin-right: 10px;*/
+        /*margin-bottom: 18.59px;*/
+        margin-left: -8px;
+        
+    }
+
+    .left__divider {
+        margin-bottom: 16px;
+        margin-left: -4px;
+        
+    }
+
+
+    .menu__item-right{
+        margin-left: 5px ;
+    }
 
 
 
+    .menu__item-left {
+        padding-top: 24px;
+        margin-right: 5px;
+        margin-bottom: 19px;
+    }
 
-    @media (max-width: 784px) {
+
+    .item__chekstatus {
+        margin-right: -10px;
+    }
+
+
+    .span {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+    
+    }
+
+
+
+    .title {
+        gap: 12px;
+        margin-top: 11px;
+        margin-bottom: 11px;
+
         
-        @media (max-width: 784px) {
-            .header {
-                /*padding: 18.59px 16px;  */
-                padding-top: 24px;
-                padding-left: 16px;
-                 
-            }
+    }
+
+    .title_text {
+        font-size: 28px;
+    }
+    
+     /*----------------------------------- Сервис меню СМАРТФОН*/
+    .service-menu {
+        list-style: none;
+        display: flex;
+        overflow-x: auto; 
+        white-space: nowrap;
+    }
+    
+    .service-menu__button {
+        background-color: white;
+        font-size: medium;
+        font-weight: 400;
+        color: grey;
+        padding: 3px;
+        width: 100%; /* Кнопки занимают всю ширину */
+        border: 2px solid #B8FFEC;
+    }
+
+    .about-as__p1 {
+        font-size: 14px;
+        font-weight: 400;
+        margin: 16px 16px;
+        margin-top: 24px;
+    }
+
+    .read-more {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 16px;
+        padding-top: 0;
+        gap:8px;
+    }
+
+    .photo {
+        max-width: 100%;
+        height: auto;
+        max-height: 100%;
+    }
+
+
+}
+
+@media (max-width: 784px) {
+    .header {
+        width: 100%;
+        height: 100%;
         
-            /*----------------------------------- Скрыть элементы*/
-            .revie_hide {
-                display: none;
-            }
-        
-        
-            /*----------------------------------- МЕНЮ 784*/
-            .menu__item-img {
-                display: flex;
-            }
-        
-            .nav {
-                width: 100%;
-                height: auto;
-            }
-        
-            .menu {
-                width: 100%;  
-                height: auto;
-                justify-content: end;
-                
-            }
-        
-            .menu_image {
-                display: flex;
-            }
-        
-            .menu__item {
-                margin-right: 16px;
-            }
-        
-            .menu__item:nth-child(3) {
-                margin-right: auto;
-            }
-        
-            /*--------------------------------ЗАГОЛОВОК СМАРТФОН*/
-        
-            .span {
-                margin-top: 12px;
-                margin-bottom: 12px;
-                margin-left: 16px;
-            }
-        
-        
-            .h1::before {
-                content: url(highlight.svg);
-                display: block;
-                position: absolute;
-                margin-left: -16px;
-            }
-        
-        
-        
-            .about-as {
-            display: flex;
-            flex-direction: row;
-            width: 720px;
-            height: 208px;
-            padding: 16px 24px;
-            gap: 16px;
-            align-items: center;
-                
-        }
-        
-        .about-as__p1 {
-            padding: 16px;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex: 1;
-            text-wrap: hidden;
-        }
-        
-        .photo {
-            max-width: 100%;
-            height: auto;
-            max-height: 100%;
-        }
-        }
+    }
+
+    .menu {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .revie_hide {
+        display: none;
+    }
+
+    .burger {
+       margin: 24px; 
+    }
+
+    .logo {
+        order: 1;
+    }
+
+    .left__divider {
+        order: 2;
+    }
+
+    .menu__user-action {
+        margin-left: auto;
+        margin-right: 16px;
+        gap: 16px;
+    }
+
+    .menu__item-right {
+        gap:16px;
+        margin-right: 16px;
+    }
+
+    .about-as {
+        display: flex;
+
+       
+        height: auto;
+    }
+
+    /*.content {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }*/
+
+    .photo__img {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
 
     }
 
-    @media (max-width: 320px) {
+    .content__text {
+        flex-direction: column;
+        gap:8px;
+    }
 
-        .header {
-            padding: 18.59px 16px;
-    
-           
-             
-        }
-    
-        .menu__item-img {
-            display: flex;
-        }
-    
-        .menu_image {
-            display: flex;
-        }
-        /*--------------------------------СКРЫТЫЕ ЭЛЕМЕНТЫ СМАРТФОН*/
-        .menu__item_mhide {
-            display: none;
-        }
-        .revie_hide {
-            display: none;
-        }
-        .about-as__p2_hidden-mob {
-            display: none;
-        }
-        /*--------------------------------МЕНЮ СМАРТФОН*/
-        .menu {
-            display: flex;
-            flex-direction: row;
-            align-items: center; 
-            
-            gap: 10px;  
-        }
-    
-        .menu__item:nth-child(4)::after {
-            content: url(divider.svg);
-            top: 50%;
-            transform: translateY(-50%);
-            left: 100%;
-            margin-left: 6.73px;
-            padding-right: 8px;
-    
-        }
-    
-        .menu__item:nth-child(7) {
-            margin-right: -26px;  
-        }
-    
-        /*--------------------------------ЗАГОЛОВОК СМАРТФОН*/
-    
-        .span {
-            margin-top: 12px;
-            margin-bottom: 12px;
-            margin-left: 16px;
-        }
-    
-    
-        .h1::before {
-            content: url(highlight.svg);
-            display: block;
-            position: absolute;
-            margin-left: -16px;
-        }
-    
-        /*---------------------------------------СЕРВИСНОЕ МЕНЮ СМАРТФОН*/
-        .service-menu {
-            flex-direction: row; 
-            gap: 1px;
-        }
-    
-    
-    
-    
-        .about-as {
-            
-            flex-direction: column; /* Элементы выстраиваются в столбец */
-            align-items: center;
-        }
-    
-        .about-as__p1 {
-            padding: 24px 16px;
-            padding-bottom: 16px;
-        }
-    
-        .read-more {
-            display: flex;
-            align-items: center;
-            padding: 16px 16px;
-            padding-top: 0;  
-        }
-    
-        .photo {
-            width: 100%; /* Изображение занимает всю ширину */
-            height: auto;
-            margin-bottom: auto;
-        }
-    
-        }
+
+
+
+
+
+
+}
+
+
 
 
 

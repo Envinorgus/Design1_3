@@ -73,6 +73,14 @@ body {
     margin-bottom: auto;
 }
 
+.list-reset {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+
+}
+
 
 @media (max-width: 784px) {
     .header {

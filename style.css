@@ -148,7 +148,7 @@ body {
         display: none;
     }
 
-    .about-as__p2_hidden-mob {
+    .content__p2_hidden-mob  {
         display: none;
     }
 
@@ -234,7 +234,7 @@ body {
         border: 2px solid #B8FFEC;
     }
 
-    .about-as__p1 {
+    .content__p1  {
         font-size: 14px;
         font-weight: 400;
         margin: 16px 16px;
@@ -250,7 +250,7 @@ body {
         gap:8px;
     }
 
-    .photo {
+    .photo__img {
         max-width: 100%;
         height: auto;
         max-height: 100%;
@@ -300,30 +300,10 @@ body {
         margin-right: 16px;
     }
 
-    .about-as {
-        display: flex;
 
-       
-        height: auto;
-    }
 
-    /*.content {
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-    }*/
 
-    .photo__img {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
-    }
-
-    .content__text {
-        flex-direction: column;
-        gap:8px;
-    }
+    
 
 
 

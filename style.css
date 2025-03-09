@@ -1,3 +1,4 @@
+/*-----------------------------------BASE STYLE*/
 * {
     margin: 0;
     padding: 0;
@@ -10,6 +11,12 @@ body {
     font-size: 14px;
 }
 
+/*.conteiner {
+    max-width: 1120px;
+    height: auto;
+    padding-right: 15px;
+}*/
+
 @font-face {
     font-family: 'TTLakes'; 
     src: url('font/TTLakes-Medium.ttf') format('ttf'),
@@ -19,131 +26,164 @@ body {
 
 
 .button {
-    list-style-type: none;
+    list-style-type: none;}
 
-}
-
-.header {
-    width: 100%; /* Занимает всю доступную ширину */
-    height: auto; /* Высота определяется содержимым */
-    display: flex;
-    
-    border-bottom: 1px solid #ddd; /* Разделительная линия */
-    
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    margin-left: -5px;
-}
-
-.menu__item-left {
-    display: flex;
-    flex-direction: row;
-    gap:16.73px;
-}
-
-.menu__user-action {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-
-.menu__item-right {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-
-    
-}
-
-.nav {
-    width: 100%;
-    height: 100%;
-}
-
-.img {
-    display: flex;
-}
-
-.title {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-.title_img {
-    border-radius: 0 5px 5px 0;
-}
-
-.service-menu {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 1px;
-    white-space: nowrap;
-    
-}
-
-.service-button {
-    background-color: white;
-    border: 2px solid transparent; /* Прозрачный бордер */
-    padding: 5px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    outline: none;
-    border-radius: 8px; /* Закругляем углы */
-    transition: border-color 0.3s ease;
-
-}
-
-.service-button:hover {
-    border-color: #B8FFEC;
-}
-
-.about-as {
-    display: flex;
-    flex-direction: column;
-}
-
-
-
-.reset__list {
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-right: 0;
-    margin-left: 0;
-    padding: 0 0;
-    gap: 0;
-    list-style-type: none;
-}
-
-
-
-
-@media (max-width: 320px) {
     .header {
-        width: 100%;
-        height: 100%;
+        width: 100%; /* Занимает всю доступную ширину */
+        height: 88px; /* Высота определяется содержимым */
+        display: flex;
+        padding-right: 16px;
+        border-bottom: 1px solid #080808; /* Разделительная линия */
+        
+    }
+    
+    .menu {
+        display: flex;
+        list-style: none;
+        margin-left: -5px;
+    }
+    
+    .menu__item-left {
+        display: flex;
+        flex-direction: row;
+        gap:16.73px;
+    }
+    
+    .menu__user-action {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+    }
+    
+    .menu__item-right {
+        display: flex;
+        flex-direction: row;
+        list-style: none; }
+
+    .img {
+        display: flex;
+    }
+
+    .service-menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1px;
+        white-space: nowrap;
         
     }
 
-    .menu {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        /*align-items: center;*/
-        margin-left: -16px;
+    .service-button {
+        background-color: white;
+        border: 2px solid transparent; /* Прозрачный бордер */
+        padding: 5px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        outline: none;
+        border-radius: 8px; /* Закругляем углы */
+        transition: border-color 0.3s ease;
+        overflow-x: auto
     }
 
-     /*----------------------------------- Скрыть элементы*/
+    .service-button:focus {
+        border-color: #B8FFEC;
+    }
 
-    .user-action_hidden {
+    .main {
+        background-color: #F8F8F8;
+    }
+
+    .titel__text-item {
+        display: flex;
+        gap:5%;
+        /*padding: 7.5% 0 7.5% 5%;*/
+        font-size: 14px;
+        
+    }
+
+    .about-as__content {
+        display: flex;
+    }
+
+    .title__repair_hidden {
         display: none;
     }
-    
+
+    .title__checkstatus_hidden {
+        display: none;
+    }
+
+
+
+    .reset__list {
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-right: 0;
+        margin-left: 0;
+        padding: 0 0;
+        gap: 0;
+        order: unset;
+        list-style-type: none;
+    }
+
+@media (min-width: 320px) and (max-width: 783px) {
+
+
+    /*------------------------------------- хэдер*/
+    .header {
+        width: 100%;
+        height: 88px;
+        padding: 0 0px 0 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .item-left {
+        order: unset;
+    }
+
+
+    .menu__item-burger {
+        display: flex;
+        margin-right: 8px;
+    }
+
+
+    .menu__item-right {
+        display: flex;
+        gap: 16px;
+        margin-right: 8px;
+    }
+
+
+
+
+    .menu__right {
+        display: flex;
+        width: auto;
+        margin-left: auto;
+        justify-content: space-between;
+    }
+
+    .right_item:first-child {
+        display: none;
+    }
+
+    .titel__text-item{
+        gap:5%;
+        padding: 7.5% 0 7.5% 5%;
+        padding-left: 0;
+    }
+
+
+  /*------------------------------------- скрытые элементы*/
+    .user-action_hidden{
+        display: none;
+    }
+
+
     .right_item_hidden {
         display: none;
     }
@@ -156,173 +196,196 @@ body {
         display: none;
     }
 
-     /*----------------------------------- Верхнее меню СМАРТФОН*/
-    .burger {
-        margin-left: -8px;
-        margin-right: 16.73px;
-    }
-
-    .logo {
-        /*margin-right: 10px;*/
-        /*margin-bottom: 18.59px;*/
-        margin-left: -8px;
-        
-    }
-
-    .left__divider {
-        margin-bottom: 16px;
-        margin-left: -4px;
-        
-    }
 
 
-    .menu__item-right{
-        margin-left: 5px ;
-    }
-
-
-
-    .menu__item-left {
-        padding-top: 24px;
-        margin-right: 5px;
-        margin-bottom: 19px;
-    }
-
-
-    .item__chekstatus {
-        margin-right: -10px;
-    }
-
-
-    .span {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-    
-    }
-
-
-
-    .title {
-        gap: 12px;
-        margin-top: 11px;
-        margin-bottom: 11px;
-
-        
-    }
-
-    .title_text {
-        font-size: 28px;
-    }
-    
-     /*----------------------------------- Сервис меню СМАРТФОН*/
     .service-menu {
-        list-style: none;
+        overflow-x: auto;
+    }
+
+    .titel__text-item {
+        padding: 7.5% 0 7.5% 5%;
+    }
+
+
+
+
+    .content__text {
         display: flex;
-        overflow-x: auto; 
-        white-space: nowrap;
-    }
-    
-    .service-menu__button {
-        background-color: white;
-        font-size: medium;
-        font-weight: 400;
-        color: grey;
-        padding: 3px;
-        width: 100%; /* Кнопки занимают всю ширину */
-        border: 2px solid #B8FFEC;
+        flex: 1 0 50%;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        overflow: hidden;
     }
 
-    .about-as__p1 {
-        font-size: 14px;
-        font-weight: 400;
-        margin: 16px 16px;
-        margin-top: 24px;
-    }
-
-    .read-more {
+    .content__photo {
+        width: 100%;
+        height: 100%;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 16px 16px;
-        padding-top: 0;
-        gap:8px;
+        flex: 0 1 360px;
+        align-items: flex-end;
+        
     }
 
-    .photo {
-        max-width: 100%;
-        height: auto;
-        max-height: 100%;
-    }
+
+
+
 
 
 }
 
-@media (max-width: 784px) {
-    .header {
-        width: 100%;
-        height: 100%;
-        
-    }
 
-    .menu {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-    }
+@media (min-width: 784px) and (max-width: 1120px)  {
 
     .revie_hide {
         display: none;
     }
 
-    .burger {
-       margin: 24px; 
+
+
+    /*-----------------------------Меню 784*/
+    .header {
+        width: 100%;
+        height: 88px;
+        padding: 0 0px 0 16px;
+        display: flex;
+        align-items: center;
     }
 
-    .logo {
-        order: 1;
+    .menu__item-left {
+        display: flex;
+        margin-left: 16px;
     }
 
-    .left__divider {
+    .left__logo {
         order: 2;
     }
 
+    .left__divider {
+        order: 1;
+    }
+
     .menu__user-action {
-        margin-left: auto;
+        display: flex;
+        width: auto;
         margin-right: 16px;
+        margin-left: auto;
         gap: 16px;
     }
 
     .menu__item-right {
-        gap:16px;
+        display: flex;
         margin-right: 16px;
+        gap:16px;
     }
 
-    .about-as {
+    .right_item {
         display: flex;
-
-       
-        height: auto;
+    
+    }
+    
+    .titel__text-item {
+        
+        padding-left: 0;
     }
 
-    /*.content {
+    .about-as__content {
         display: flex;
         flex-direction: column;
-        gap: 8px;
-    }*/
+        gap: 16px;
+        
+    }
 
-    .photo__img {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-
+    .about-as__body {
+        width: 100vw;
     }
 
     .content__text {
+        display: flex;
+        flex: 1 0 50%;
+        width: 100%;
         flex-direction: column;
-        gap:8px;
+        align-items: flex-start;
+        gap: 16px;
+        overflow: hidden;
+    }
+
+    .content__photo {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex: 1 0 44%;
+        display: flex;
+        flex: 0 1 360px;
+        align-items: flex-end;
+        object-fit: contain;
+        
+    }
+
+
+
+
+
+
+}
+
+@media (min-width: 784px) and (min-width: 1121px) {
+    .header_hidden{
+        display: none;
+    }
+
+    .titel__text-item_hidden {
+        display: none;
+    }
+
+    .title {
+        display: flex;
+        width: 100%;
+        height: 88px;
+        justify-content: flex-end;
+        text-align: left;
+        gap: 32px;
+        padding-right: 32px;
+    }
+
+    .repair__img {
+        width: 40px;
+    }
+    
+    .title__repair {
+        display: flex; 
+    }
+
+
+    .title__repair-item {
+        display: flex;
+        flex-direction: row; /* Элементы в строку */
+        align-items: center;
+        text-decoration: none;
+        gap: 8px;
+    }
+
+
+
+    .title__checkstatus {
+        display: flex;
+}
+    .checkstatus__img  {
+        width: 40px;
+    }
+
+    .title_check {
+        display: flex;
+    }
+
+    .item__chekstatus {
+        display: flex;
+        flex-direction: row; /* Элементы в строку */
+        align-items: center;
+        text-decoration: none;
+        gap: 8px;
+
     }
 
 
@@ -332,27 +395,3 @@ body {
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

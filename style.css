@@ -509,22 +509,26 @@ button {
         margin-top: 32px;
     }
 
+    .nav-service {
+        overflow-x: auto;
+    }
 
-.section {
-    display: flex;
-}
 
-.section__image {
-    flex: 0 0 50%;
-    transform: translate(-100%, 0);
-    
-}
+    .section {
+        display: flex;
+    }
 
-.section__body {
-    width: 50%;
-    
-    
-}
+    .section__image {
+        flex: 0 0 50%;
+        transform: translate(-100%, 0);
+        
+    }
+
+    .section__body {
+        width: 50%;
+        
+        
+    }
 
 
 

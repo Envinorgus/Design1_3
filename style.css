@@ -11,11 +11,7 @@ body {
     font-size: 14px;
 }
 
-/*.conteiner {
-    max-width: 1120px;
-    height: auto;
-    padding-right: 15px;
-}*/ 
+
 
 @font-face {
     font-family: 'TTLakes-Regular';
@@ -65,11 +61,14 @@ button {
 }
 
 .a:visited,
-.a:hover,
 .a:active {
     color: #1B1C21 ;
     text-decoration: none;
     font-family: 'TTLakes-Regular';
+}
+
+.a:hover {
+    border-bottom: 1px double black;
 }
 
 .read-more__link {
@@ -94,7 +93,7 @@ button {
         height: 88px; /* Высота определяется содержимым */
         display: flex;
         padding-right: 16px;
-        border-bottom: 1px solid #080808; /* Разделительная линия */
+        /*border-bottom: 0.1px solid #B8FFEC*/
         
     }
 
@@ -239,12 +238,27 @@ button {
         gap: 0;
         order: unset;
         list-style-type: none;
+        flex-wrap: nowrap;
+    }
+
+    .item__repair {
+        display: flex;
+    }
+
+    .item__chekstatus {
+        display: flex;
     }
 
 
     @media (min-width: 220px) and (max-width: 320px) {
 
+        .item__repair {
+            display: flex;
+        }
 
+        .item__chekstatus {
+            display: flex;
+        }
 
 
 
@@ -343,8 +357,15 @@ button {
 
     
         .section__body {
+            width: 100%; 
+        }
+
+        .section__image {
             width: 100%;
-            
+        }
+
+        .a:hover {
+            border-bottom: 1px double black;
         }
     
     
@@ -456,6 +477,18 @@ button {
         display: none;
     }
 
+    .a:hover {
+        border-bottom: 1px double black;
+    }
+
+    .item__message:hover {
+        display: flex;
+    }
+
+    .item__profile {
+        display: flex;
+    }
+
 
 
     /*-----------------------------Меню 784*/
@@ -536,14 +569,11 @@ button {
 
 }
 
-@media (min-width: 784px) and (min-width: 1121px) {
+@media (min-width: 1121px) {
     .header_hidden{
         display: none;
     }
-/*
-    .titel__text-item_hidden {
-        display: none;
-    }*/
+
 
     .titel__text-item {
         margin-right: auto;
@@ -626,6 +656,12 @@ button {
     .section__body {
         width: 50%;
         
+    }
+
+
+    .service-menu {
+        flex-wrap: wrap;
+
     }
 
     .reviews__link {

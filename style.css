@@ -135,6 +135,7 @@ button {
         display: flex;
         gap: 1px;
         white-space: nowrap;
+        display: flex;
         
     }
 
@@ -209,6 +210,8 @@ button {
         padding-top: 5px;
         overflow: hidden;
     }
+
+    
 
     /*
 
@@ -456,15 +459,17 @@ button {
 
 
     .section {
-        display: flex;
-        flex-direction: column;
+        width: 100%; 
     }
 
+    .section__image {
+        width: 100%; 
+    }
 
-
-    .section__body {
-        width: 100%;
-        
+    .conteiner__image-item {
+        width: 100%; 
+        height: auto; 
+        display: block; 
     }
 
 
@@ -662,6 +667,12 @@ button {
     .service-menu {
         flex-wrap: wrap;
 
+    }
+
+    .service-menu__item:last-child {
+        flex-basis: 100%;
+        margin-top: 5px;
+        margin-left: -5px;
     }
 
     .reviews__link {
